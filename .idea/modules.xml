@@ -2,7 +2,9 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
+      <module fileurl="file://$PROJECT_DIR$/Algorithms/Algorithms.iml" filepath="$PROJECT_DIR$/Algorithms/Algorithms.iml" />
       <module fileurl="file://$PROJECT_DIR$/.idea/JavaHomeworkExercise.iml" filepath="$PROJECT_DIR$/.idea/JavaHomeworkExercise.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Tasks/Tasks.iml" filepath="$PROJECT_DIR$/Tasks/Tasks.iml" />
     </modules>
   </component>
 </project>
