@@ -4,7 +4,7 @@ import java.util.*;
 public class Main {
     public static void main(String[] args) {
 
-        int[] array = {1, 2, 3, 2, 5,7,5,4,5,6,1,7};
+        int[] array = {1, 2, 3, 2, 5,7,5,4,5,6,1,7,8,1};
         List<List<Integer>> subsequences = StrictlyIncreasing(array);
 
         for (List<Integer> subsequence : subsequences) {
@@ -22,13 +22,14 @@ public class Main {
                 currentSubsequence.add(array[i]);
             } else {
                 if (!currentSubsequence.isEmpty()) {
-                    result.add(new ArrayList<>(currentSubsequence));
+                    if (currentSubsequence.size()>1)
+                          result.add(new ArrayList<>(currentSubsequence));
                     currentSubsequence.clear();
                 }
                 currentSubsequence.add(array[i]);
             }
         }
-        if (!currentSubsequence.isEmpty()) {
+        if (!currentSubsequence.isEmpty()&&currentSubsequence.size()>1) {
             result.add(currentSubsequence);
         }
 
