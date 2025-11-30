@@ -24,7 +24,8 @@
  - **IntelliJ IDEA** או IDE תואם Java
 
 ---
-## 📥 הורדת הפרויקט
+
+##  הורדת הפרויקט
 
 ### אפשרות 1 – הורדה כ־ZIP
 1. להיכנס לקישור:  
@@ -34,7 +35,7 @@
 4. לחלץ את הקובץ למחשב
 
 ### אפשרות 2 – Clone עם Git
-   bash git clone https://github.com/chaya00/JavaHomeworkExercise.git
+bash git clone https://github.com/chaya00/JavaHomeworkExercise.git
 
 ### הוראות הרצה קצרות
 1. **פתח/י את תיקיית הפרויקט ב‑IntelliJ** (File → Open) ובחר/י את התיקייה הראשית של הריפו.  
