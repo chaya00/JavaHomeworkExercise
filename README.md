@@ -1,56 +1,77 @@
-# JavaHomeworkExercise
 
 
-מערכת לניהול משימות (Task Manager) שפותחה כחלק ממטלת בית ב-Java.  
-המערכת מבוססת על עבודה עם קבצים (File I/O), ללא שימוש בספריות חיצוניות.
-בנוסף, פתרון אלגוריתמי, עיצוב מחלקות ו -DESIGN
+# JavaHomeworkExercise – Task Manager System
 
-הפרויקט כולל:
-- ממשק קונסול אינטראקטיבי
-- שכבת Repository לניהול קובץ נתונים
-- שכבת Service ללוגיקה עסקית (חיפוש, מיון, עדכון סטטוס)
-- מחלקות מודל (DTO)
-- מסמך תשובות DESIGN כחלק מהמבחן
-
+מערכת לניהול משימות (Todo List) המבוססת על Java Standard Edition וללא שימוש בספריות חיצוניות.  
+המערכת שומרת נתונים מקומית בקובץ JSON ומדגימה עבודה עם שכבות **Repository**, **Service** ו־**UI קונסולי**.
 
 ---
 
-### דרישות מקדימות
- - **JDK 11** או גרסה עדכנית יותר  
- - **IntelliJ IDEA** או IDE תואם Java
+## תכולת הפרויקט
+- **Model** – מחלקות נתונים (`Task`, `Status` enum)  
+- **Repository** – ניהול משימות על גבי קובץ JSON  
+- **Service** – לוגיקה עסקית (חיפוש, מיון, עדכון סטטוס)  
+- **Main (UI)** – ממשק טקסטואלי בסיסי להפעלת המערכת  
+- **פתרון אלגוריתמי** – הפקת כל תתי־הרצפים העולים במערך  
+- **Design Document** – תכנון REST API ומערכת הזמנות/תשלומים  
 
 ---
 
-##  הורדת הפרויקט
+## דרישות מערכת
+- Java **JDK 11** ומעלה  
+- כל IDE תואם Java (מומלץ IntelliJ)
 
-### אפשרות 1 – הורדה כ־ZIP
-1. להיכנס לקישור:  
+---
+
+## הורדת הפרויקט
+
+### 1. הורדה כ־ZIP
+1. היכנס לקישור:  
    https://github.com/chaya00/JavaHomeworkExercise
-2. ללחוץ על **Code**
-3. לבחור **Download ZIP**
-4. לחלץ את הקובץ למחשב
+2. לחץ **Code**  
+3. בחר **Download ZIP**  
+4. חלץ את הקובץ למחשב  
 
-### אפשרות 2 – Clone עם Git
-bash git clone https://github.com/chaya00/JavaHomeworkExercise.git
+### 2. Clone דרך Git
+   bash git clone https://github.com/chaya00/JavaHomeworkExercise.git
 
-### הוראות הרצה קצרות
-1. **פתח/י את תיקיית הפרויקט ב‑IntelliJ** (File → Open) ובחר/י את התיקייה הראשית של הריפו.  
-2. ודא/י שה‑**Project SDK מוגדר ל‑JDK 11** (File → Project Structure → Project SDK).  
-3. **Build → Build Project** כדי לקמפל את הקוד.  
-4. עבור להרצת הדמו: מצא/י את `Main.java` בתוך התיקייה **Tasks**, לחץ/י לחיצה ימנית → **Run**.  
-   - ה־UI הוא קונסול בסיסי שמדגים פעולות: **Add, Update, Delete, GetById, ListAll, MarkDone, Search, ListByStatus**.  
-5. להרצה משורת פקודה ניתן לקמפל ולהריץ את המחלקות דרך `javac` ו‑`java` בהתאם למבנה התיקיות.
+## הרצה בתוך IntelliJ
+1. פתח את תיקיית הפרויקט (File → Open). 
 
----
+2. ודא שה־SDK מוגדר ל־JDK 11 (File → Project Structure).
 
-### הערות חשובות
- - **מיקום קובץ ה‑JSON**: ברירת המחדל היא תיקיית העבודה של היישום; אם הקובץ לא קיים, הקוד יוצר אותו בריצה הראשונה.  
- - הקוד מניח שימוש ב‑**קובץ נתונים מקומי** ולא במסד נתונים חיצוני.  
- - הקבצים בתיקיית `out/production` הם תוצרי בנייה — אין לערוך שם קבצים מקוריים.
+3. בצע Build → Build Project.
 
----
+4. אתר את:
+Tasks/Main.java
+ולחץ → Run.
 
-### קובץ כניסה מרכזי
-- **Main.java** בתיקיית **Tasks** — נקודת ההרצה לדמו ולבדיקות ידניות.
+המערכת מאפשרת:
 
+Add
 
+Update
+
+Delete
+
+GetById
+
+ListAll
+
+MarkDone
+
+Search
+
+ListByStatus
+
+הרצה משורת פקודה
+javac Tasks/*.java
+java Tasks.Main
+מידע נוסף
+קובץ ה־JSON נוצר אוטומטית אם אינו קיים.
+
+הנתונים נשמרים מקומית בלבד (File I/O).
+
+ללא שימוש בספריות חיצוניות – Java SE בלבד.
+ # קובץ הכניסה 
+Tasks/Main.java
