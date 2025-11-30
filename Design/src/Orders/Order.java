@@ -4,11 +4,11 @@ public class Order {
     private int id;
     private int customerId;
     private double amount;
-    private OrderStatus status;
+    private Status status;
 
     public Order() {}
     public Order(int id, int customerId, double amount) {
-        this.id = id; this.customerId = customerId; this.amount = amount; this.status = OrderStatus.NEW;
+        this.id = id; this.customerId = customerId; this.amount = amount; this.status=Status.NEW;
     }
 
     public int getId() { return id; }
@@ -17,6 +17,6 @@ public class Order {
     public void setCustomerId(int customerId) { this.customerId = customerId; }
     public double getAmount() { return amount; }
     public void setAmount(double amount) { this.amount = amount; }
-    public OrderStatus getStatus() { return status; }
-    public void setStatus(OrderStatus status) { this.status = status; }
+    public Status getStatus() { return status; }
+    public void setStatus(Status status) { this.status = status; }
 }

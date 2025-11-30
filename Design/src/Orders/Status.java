@@ -1,6 +1,5 @@
 package Orders;
 
-public enum OrderStatus {
+public enum Status {
     NEW, PAID, CANCELED
 }
-
